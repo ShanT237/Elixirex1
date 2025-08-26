@@ -6,7 +6,23 @@ defmodule Util do
 
   @doc """
   Calcula el salario neto de un empleado.
-  - horas > 160 → horas extra al 125%
+
+  Si las horas trabajadas son mayores a 160, las horas extra se pagan al 125%.
+
+  ## Parámetros
+
+    - nombre: Nombre del empleado (cadena).
+    - horas: Número total de horas trabajadas (entero).
+    - valor_hora: Valor por hora (entero).
+
+  ## Retorno
+
+    - Cadena con el mensaje del salario neto.
+
+  ## Ejemplo
+
+      iex> Util.calcular_salario("Ana", 170, 100)
+      "Empleado Ana, su salario neto es: $11250.0"
   """
   def calcular_salario(nombre, horas, valor_hora) do
     extra_horas = max(horas - 160, 0)

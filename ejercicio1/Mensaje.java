@@ -1,7 +1,16 @@
 import javax.swing.*;
 import java.io.*;
 
+/**
+ * La clase Mensaje permite al usuario ingresar un mensaje mediante una ventana,
+ * lo envía a un script Elixir y muestra la respuesta en otra ventana.
+ */
 public class Mensaje {
+    /**
+     * Método principal que gestiona la interacción con el usuario y la ejecución del script Elixir.
+     *
+     * @param args Argumentos de la línea de comandos (no utilizados).
+     */
     public static void main(String[] args) {
         try {
             // Ventana para ingresar mensaje

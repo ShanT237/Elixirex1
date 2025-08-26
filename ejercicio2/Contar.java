@@ -2,7 +2,16 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.*;
 
+/**
+ * La clase Contar solicita una palabra al usuario, la envía a un script Elixir
+ * para calcular su longitud y muestra el resultado en una ventana.
+ */
 public class Contar {
+    /**
+     * Método principal que gestiona la interacción con el usuario y la ejecución del script Elixir.
+     *
+     * @param args Argumentos de la línea de comandos (no utilizados).
+     */
     public static void main(String[] args) {
         try {
             // Pedir palabra al usuario
